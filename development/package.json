@@ -1,6 +1,6 @@
 {
   "name": "tslerp",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "description": "Typescript library for lerping single and multi-sample data sets over time",
   "private": false,
@@ -23,12 +23,13 @@
     "slerp"
   ],
   "scripts": {
-    "postinstall": "typings install",
-    "typings": "typings",
     "test": "./node_modules/karma/bin/karma start config/karma.conf.ci.js",
     "testdev": "./node_modules/karma/bin/karma start config/karma.conf.js"
   },
   "dependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/jasmine": "^2.6.3",
+    "@types/node": "^8.0.51",
     "core-js": "^2.4.0",
     "systemjs": "0.19.27"
   },
@@ -42,10 +43,8 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1",
-    "lite-server": "^2.2.0",
     "tslint": "3.15.1",
-    "typescript": "^2.3.2",
-    "typings": "^1.0.4",
+    "typescript": "^2.4.2",
     "watchify": "^3.7.0"
   }
 }
