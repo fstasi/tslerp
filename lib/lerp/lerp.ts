@@ -33,7 +33,7 @@ export class Lerp {
     private lerpFunctions: { [key: string]: (initial: number, lerpDistance: number, duration: number, currentTime: number) => number } = {};
     private lerpIntervals: Intervals = new Intervals();
 
-    private clientCallback: (results: number[], time: number) => void = null;
+    private clientCallback: any = null;
 
     private transition: Transition = Transition.EaseOut;
     private style: Style = Style.Quadratic;

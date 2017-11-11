@@ -1,8 +1,2 @@
-development/node_modules
-development/typings
-development/src/**/*.js.map
-development/src/**/*.js
-development/src/**/*.d.ts
-release
-*.pyc
-*.log
+node_modules
+dist

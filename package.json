@@ -1,50 +1,27 @@
 {
-  "name": "tslerp",
-  "version": "1.1.0",
+  "name": "tslerp2",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Typescript library for lerping single and multi-sample data sets over time",
-  "private": false,
-  "homepage": "https://github.com/leewinder/tslerp",
   "author": {
-    "name": "Lee Winder",
-    "email": "lee.winder@gmail.com",
-    "url": "www.leewinder.co.uk"
+    "name": "Francesco Stasi",
+    "email": "f.stasi@me.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leewinder/tslerp"
+    "url": "https://github.com/fstasi/tslerp2"
   },
-  "bugs": {
-    "url": "https://github.com/leewinder/tslerp"
-  },
-  "keywords": [
-    "typescript",
-    "lerp",
-    "slerp"
-  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start config/karma.conf.ci.js",
-    "testdev": "./node_modules/karma/bin/karma start config/karma.conf.js"
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@types/core-js": "^0.9.43",
-    "@types/jasmine": "^2.6.3",
-    "@types/node": "^8.0.51",
-    "core-js": "^2.4.0",
-    "systemjs": "0.19.27"
   },
   "devDependencies": {
-    "browserify": "^13.1.0",
-    "codelyzer": "0.0.28",
-    "jasmine-core": "2.4.1",
-    "jshint": "^2.9.3",
-    "karma": "^1.2.0",
-    "karma-browserify": "^5.1.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.1",
     "tslint": "3.15.1",
-    "typescript": "^2.4.2",
-    "watchify": "^3.7.0"
+    "typescript": "^2.4.2"
   }
 }

@@ -1,20 +1,13 @@
 {
-    "compileOnSave": true,
     "compilerOptions": {
         "target": "es5",
-        "rootDir": "src/tslerp",
         "module": "commonjs",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true,
+        "rootDir": "lib",
         "declaration": true,
-        "removeComments": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "watch": true
+        "outDir": "./dist",
+        "strict": true
     },
+    "compileOnSave": true,
     "exclude": [
         "node_modules"
     ]
